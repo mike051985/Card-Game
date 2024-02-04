@@ -19,6 +19,9 @@ function handleclick() {
       remainingText.textContent = `Remaining cards: ${data.remaining}`
       deckId = data.deck_id
     })
+
+    drawCardBtn.disabled = false
+    newDeckBtn.disabled = true
 }
 
 newDeckBtn.addEventListener("click", handleclick)
@@ -40,6 +43,12 @@ drawCardBtn.addEventListener("click", ()=> {
       
       if (data.remaining === 0) {
         drawCardBtn.disabled = true
+      }
+
+      if (data.remaining != 0) {
+        resetBtn.disabled = true
+      } else {
+        resetBtn.disabled = false
       }
   })
 })
@@ -72,4 +81,5 @@ resetBtn.addEventListener("click", ()=> {
   computerScoreEl.textContent = ""
   myScoreEl.textContent = ""
   header.textContent = "Card Game"
+  newDeckBtn.disabled = false
 })
