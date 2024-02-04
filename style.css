@@ -25,6 +25,11 @@ button#new-deck {
   padding: 5px;
 }
 
+button#reset {
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
 button.draw {
   font-size: 1.2rem;
   padding: 5px;
