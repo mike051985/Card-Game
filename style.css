@@ -91,7 +91,12 @@ h2#my-score {
 
   #remaining {
     margin: 10px 5px;
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  div.card-slot {
+    height: 120px;
+    width: calc(120px * 5/7);
   }
   
 }
