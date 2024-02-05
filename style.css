@@ -18,6 +18,10 @@ button {
   background-color: #fff100;
   cursor: pointer;
   border: none;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 button#new-deck {
@@ -26,25 +30,28 @@ button#new-deck {
 }
 
 button#reset {
-  padding: 5px 10px;
-  margin-left: 5px;
+  padding: 5px 15px;
 }
 
 button.draw {
-  font-size: 1.2rem;
-  padding: 5px;
-  align-self: stretch;
+  padding: 5px 17px;
+}
+
+#remaining {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
 }
 
 div.card-slot {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 5px;
-  height: 120px;
-  width: calc(120px * 5/7);
+  height: 200px;
+  width: calc(200px * 5/7);
 }
 
 div.card-slot:nth-of-type(1) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 img.card {
@@ -69,4 +76,22 @@ button:disabled {
 
 h2 {
   margin: 10px;
+}
+
+h2#my-score {
+  margin-bottom: 50px;
+}
+
+/* Media Queries*/
+@media only screen and (max-width: 500px) {
+  button {
+    margin: 10px 5px;
+    font-size: 14px;
+  }
+
+  #remaining {
+    margin: 10px 5px;
+    font-size: 16px;
+  }
+  
 }
