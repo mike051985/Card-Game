@@ -46,8 +46,8 @@ button.draw {
 div.card-slot {
   border: 2px solid #000000;
   border-radius: 5px;
-  height: 175px;
-  width: calc(175px * 5/7);
+  height: 150px;
+  width: calc(150px * 5/7);
 }
 
 div.card-slot:nth-of-type(1) {
