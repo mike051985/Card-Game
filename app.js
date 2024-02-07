@@ -87,12 +87,5 @@ drawCardBtn.addEventListener("click", ()=> {
 
 // Reset the Game
 resetBtn.addEventListener("click", ()=> {
-    remainingText.textContent = ""
-    cardsContainer.children[0].innerHTML = ""
-    cardsContainer.children[1].innerHTML = ""
-    computerScoreEl.textContent = ""
-    myScoreEl.textContent = ""
-    messageEl.textContent = ""
-    newDeckBtn.disabled = false
     location.reload()
 })
