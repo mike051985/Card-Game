@@ -4,6 +4,7 @@ html, body {
   background-image: url(https://i.postimg.cc/YqLW7kw5/table.png);
   font-family: "Exo 2", sans-serif;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 body {
@@ -46,8 +47,8 @@ button.draw {
 div.card-slot {
   border: 2px solid #000000;
   border-radius: 5px;
-  height: 150px;
-  width: calc(150px * 5/7);
+  height: 200px;
+  width: calc(200px * 5/7);
 }
 
 div.card-slot:nth-of-type(1) {
@@ -84,6 +85,10 @@ h2#my-score {
 
 /* Media Queries*/
 @media only screen and (max-width: 500px) {
+  html, body {
+    height: 80vh;
+  }
+
   button {
     margin: 10px 5px;
     font-size: 14px;
@@ -95,8 +100,8 @@ h2#my-score {
   }
 
   div.card-slot {
-    height: 120px;
-    width: calc(120px * 5/7);
+    height: 150px;
+    width: calc(150px * 5/7);
   }
   
 }
